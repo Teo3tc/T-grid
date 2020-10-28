@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-grid</title>
+    <link rel="stylesheet" href="./assets/scss/main.scss">
+</head>
+
+<body class=" init-typo grid-fuild-1fr rgp-10">
+    <header class="cl1 grid-full-fluid mt-10 ">
+        <div class="cl1 xctr yctr grid-full-fluid  rgp-10">
+            <h1 class=" cl1 xctr yctr fw-600 fs-50">T-Grid</h1>
+            <p class="cl1 xctr yctr fs-15"> A grid system based on the <span class="fw-600">grid</span> display property.</p>
+        </div>
+    </header>
+    <main class="cl1 grid-full-fluid rgp-20">
+        <article class="cl1 grid-full-fluid w80 xctr rgp-10">
+            <h2 class="cl1 fw-400 t-upper">Simple</h2>
+            <p>Set your grid in FR or % </p>
+            <p> <span class="fw-600">Exemple :</span> grid-5frx5fr</p>
+            <div class="cl1 grid-5frx5fr  contenaire">
+                <div class="cl1-1 rw1  w100 h100 contenaire_demo">
+                    <p>cl1-1 rw1</p>
+                </div>
+                <div class="cl1-4 rw2 w100 h100 contenaire_demo">
+                    <p>cl1-4 rw2</p>
+                </div>
+                <div class="cl1-3 rw3  w100 h100 contenaire_demo">
+                    <p>cl1-3 rw3</p>
+                </div>
+                <div class="cl1-2 rw4 w100 h100 contenaire_demo">
+                    <p>cl1-2 rw4</p>
+                </div>
+                <div class="cl1 rw5  w100 h100 contenaire_demo">
+                    <p>cl1 rw5</p>
+                </div>
+            </div>
+            <!--<pre class="cl1">
+                <code class=" fs-12" style="color: blue;">
+                ---- 1fr to 10fr ---
+                &lt;div class="grid-10frx10fr"&gt;
+                    &lt;div class="cl1 rw1"&gt;&lt;/div&gt;
+                    &lt;div class="cl1-1 rw1-1"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>-->
+            <p> <span class="fw-600">Exemple :</span> grid-5x5</p>
+
+            <div class="cl1 grid-5x5 contenaire ">
+                <div class="cl5 rw1  w100 h100 contenaire_demo">
+                    <p>cl1-1 rw1</p>
+                </div>
+                <div class="cl4-2 rw2 w100 h100 contenaire_demo">
+                    <p>cl1-4 rw2</p>
+                </div>
+                <div class="cl3-3 rw3  w100 h100 contenaire_demo">
+                    <p>cl1-3 rw3</p>
+                </div>
+                <div class="cl2-4 rw4 w100 h100 contenaire_demo">
+                    <p>cl1-2 rw4</p>
+                </div>
+                <div class="cl1-1 rw5  w100 h100 contenaire_demo">
+                    <p>cl1 rw5</p>
+                </div>
+            </div>
+        </article>
+        <article class="cl1 grid-full-fluid w80 xctr rgp-10">
+            <h2 class="cl1 fw-400 t-upper">Control of row and col</h2>
+            <p>more control than flexbox</p>
+            <p> <span class="fw-600">Exemple :</span> grid-10frx10fr</p>
+            <div class="cl1 grid-10frx10fr  contenaire">
+                <div class="cl3 rw1-1  w100 h100 contenaire_demo">
+                    <p>1<br>cl3 rw1-1</p>
+                </div>
+                <div class="cl4-1 rw2-2 w100 h100 contenaire_demo">
+                    <p>2<br>cl4-1 rw2-2</p>
+                </div>
+                <div class="cl5 rw3-1  w100 h100 contenaire_demo">
+                    <p>3<br>cl5 rw3-1</p>
+                </div>
+                <div class="cl2-8 rw8 w100 h100 contenaire_demo">
+                    <p>4<br>cl2-8 rw8</p>
+                </div>
+                <div class="cl8 rw2-8  w100 h100 contenaire_demo">
+                    <p>5<br>cl8 rw2-8</p>
+                </div>
+            </div>
+            <!--<pre class="cl1">
+                <code class=" fs-12" style="color: blue;">
+                ---- 1fr to 10fr ---
+                &lt;div class="grid-10frx10fr"&gt;
+                    &lt;div class="cl1 rw1"&gt;&lt;/div&gt;
+                    &lt;div class="cl1-1 rw1-1"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>-->
+        </article>
+        <article class="cl1 grid-full-fluid w80 xctr rgp-10">
+            <h2 class="cl1 fw-400 t-upper">GAP</h2>
+            <p>Less margin more row and col gap</p>
+            <p> <span class="fw-600">Exemple :</span> grid-5frx5fr</p>
+            <div class="cl1 grid-5frx5fr rgp-10 cgp-10 contenaire">
+                <div class="cl2-2 rw1  w100 h100 contenaire_demo">
+                    <p>cl1-1 rw1</p>
+                </div>
+                <div class="cl4-1 rw1 w100 h100 contenaire_demo">
+                    <p>cl1-4 rw2</p>
+                </div>
+                <div class="cl2-3 rw2  w100 h100 contenaire_demo">
+                    <p>cl1-3 rw3</p>
+                </div>
+                <div class="cl1 rw1-2 w100 h100 contenaire_demo">
+                    <p>cl1-2 rw4</p>
+                </div>
+                <div class="cl1-2 rw3-1  w100 h100 contenaire_demo">
+                    <p>cl1 rw5</p>
+                </div>
+                <div class="cl3-2 rw3-1  w100 h100 contenaire_demo">
+                    <p>cl1 rw5</p>
+                </div>
+                <div class="cl5 rw2-1  w100 h100 contenaire_demo">
+                    <p>cl1 rw5</p>
+                </div>
+            </div>
+            <!--<pre class="cl1">
+                <code class=" fs-12" style="color: blue;">
+                ---- 1fr to 10fr ---
+                &lt;div class="grid-10frx10fr"&gt;
+                    &lt;div class="cl1 rw1"&gt;&lt;/div&gt;
+                    &lt;div class="cl1-1 rw1-1"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>-->
+        </article>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>

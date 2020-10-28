@@ -1,0 +1,35 @@
+{
+    "name": "t-grid",
+    "version": "1.0.0",
+    "description": "librairie GRID css",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "parcel src/index.html",
+        "build": "parcel build src/index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Teo3tc/T-grid.git"
+    },
+    "keywords": [
+        "grid",
+        "css"
+    ],
+    "author": "teo3c",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Teo3tc/T-grid/issues"
+    },
+    "homepage": "https://github.com/Teo3tc/T-grid#readme",
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4",
+        "postcss-modules": "^3.2.2",
+        "sass": "^1.27.0"
+    },
+    "dependencies": {
+        "autoprefixer": "^10.0.1",
+        "postcss": "^8.1.4",
+        "postcss-nested": "^5.0.1"
+    }
+}

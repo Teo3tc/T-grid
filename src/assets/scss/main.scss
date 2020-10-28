@@ -1,0 +1,48 @@
+@import "./tgrid.scss";
+@import "./tfonts.scss";
+@import "./tmarginpading.scss";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.contenaire {
+    border: solid 1px black;
+}
+
+.contenaire_demo {
+    min-height: 2em;
+    display: grid;
+    grid-template: auto/auto;
+    text-align: center;
+    //border: 1px solid black;
+    & p {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+.contenaire_demo:nth-child(2n) {
+    background-color: lightblue;
+}
+
+.contenaire_demo:nth-child(2n+1) {
+    background-color: rgb(216, 90, 115);
+}
+
+pre {
+    overflow-x: auto;
+    padding: 1.25em;
+    border: 1px solid #e6e6e6;
+    border-left-width: 1px;
+    border-left-width: 5px;
+    margin: 1.6em 0;
+    font-size: .875em;
+    background: #fcfcfc;
+    white-space: pre;
+    word-wrap: normal;
+}
